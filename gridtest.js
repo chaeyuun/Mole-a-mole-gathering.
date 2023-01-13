@@ -63,7 +63,7 @@ function mozzieMove() {
   timerId = setInterval(function() {
     randomSquare();
     countDown();
-  }, 500);
+  }, 600);
   
 }
 

@@ -47,7 +47,7 @@ button {
 
 /* //시간과 점수 글씨 */
 #status h2{
-  border: solid;
+  border:2px solid;
   width: 300px;
   padding: 10px 0;
   font-weight: 900;
@@ -76,7 +76,7 @@ button {
 
 /* //images 폴더에 있는 모기 아이콘을 가져와서 사각형크기에 맞게 cover 이용 */
 .mozzie{
-  background-image: url("chaeyoon.png");
+  background-image: url("동글정채윤.png");
   background-size: cover;
 }
 
