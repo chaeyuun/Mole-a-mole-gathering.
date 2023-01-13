@@ -34,7 +34,9 @@ h1 {
 
 /* //버튼 사이즈 조정 */
 button {
-  font-size: 30px;
+  font-size: 28px;
+  width: 55%;
+  height: 50px;
 }
 
 /* //시간과 점수가 표시될 곳. 모기가 나오는 곳과 가로 사이즈 동일 */
@@ -76,7 +78,7 @@ button {
 
 /* //images 폴더에 있는 모기 아이콘을 가져와서 사각형크기에 맞게 cover 이용 */
 .mozzie{
-  background-image: url("동글정채윤.png");
+  background-image: url("찐동글정채윤.png");
   background-size: cover;
 }
 
@@ -88,7 +90,11 @@ button {
     }
   
     /* Change the width and height of the .square class */
-  
+    .square {
+      width: 24%;
+      height: 20%;
+      border-width: 1px;
+    }
     /* Change the width of the #status id */
     #status {
       width: 90%;
@@ -102,6 +108,6 @@ button {
     /* Change the width and height of the .grid class */
     .grid {
       width: 90%;
-      height: 90%;
+      height: 500px;
     }
   }

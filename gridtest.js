@@ -63,7 +63,7 @@ function mozzieMove() {
   timerId = setInterval(function() {
     randomSquare();
     countDown();
-  }, 600);
+  }, 500);
   
 }
 
@@ -83,6 +83,7 @@ function countDown() {
 
     //전체 얻은 점수를 alert에 띄운다
     alert('게임 오버! 당신의 점수는' + result + '입니다.');
+    window.location.reload()
   }
 
 }
