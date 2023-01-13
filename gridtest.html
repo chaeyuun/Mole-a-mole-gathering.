@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>정채윤 잡기</title>
+    <!-- //CSS 연결은 위에서, script 연결은 맨 하단 -->
+    <link rel="stylesheet" href="gridtest.css">
+
+</head>
+<body>
+  <!-- //글자색 바꾸기 위해 클래스 지정 -->
+<h1><span class="blue">정채윤잡기</span></h1>
+
+  <!-- //시간과 점수가 표시될 거에요 -->
+<div id="status">
+    <h2>남은시간: <span id="time-left">20</span></h2>
+    <h2>점수: <span id="score">0</span></h2>
+</div>
+
+<p>게임이 끝나면 새로고침을 눌러주세요!</p>
+<!-- //게임시작 버튼을 누르면 mozzieMove() 시작. 자바스크립트 파일에서 확인  -->
+<div class="wrap">
+<button onclick="mozzieMove()">게임시작</button>
+<button onClick="window.location.reload()">새로고침</button>
+</div>
+
+  <!-- //모기가 나올 곳 만들어주기  -->
+<div class="grid">
+    <div class="square" id="1"></div>
+    <div class="square" id="2"></div>
+    <div class="square" id="3"></div>
+    <div class="square" id="4"></div>
+    <div class="square" id="5"></div>
+    <div class="square" id="6"></div>
+    <div class="square" id="7"></div>
+    <div class="square" id="8"></div>
+    <div class="square" id="9"></div>
+    <div class="square" id="10"></div>
+    <div class="square" id="11"></div>
+    <div class="square" id="12"></div>
+    <div class="square" id="13"></div>
+    <div class="square" id="14"></div>
+    <div class="square" id="15"></div>
+    <div class="square" id="16"></div>
+</div>
+
+</body>
+
+  <!-- //html보다 더 늦게 실행되야 되어서 제일 하단에 연결 -->
+<script src="gridtest.js" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,107 @@
+/* //margin과 padding을 리셋(0으로) 해주고, 글씨체 바꾸기
+//원하는 글씨체로 바꾸면 됩니다. */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Noto sans";
+}
+
+/* //화면 중앙으로 정렬 */
+body{
+  text-align: center;
+}
+
+/* //제목 (WHACK A MOZZIE) */
+h1 {
+  margin: 15px;
+  font-size: 42px;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin: 0 auto;
+}
+/* //모기가 들어갈 사각형 */
+.square {
+  width: 24%;
+  height: 24%;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+}
+
+/* //버튼 사이즈 조정 */
+button {
+  font-size: 30px;
+}
+
+/* //시간과 점수가 표시될 곳. 모기가 나오는 곳과 가로 사이즈 동일 */
+#status {
+  width: 616px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+/* //시간과 점수 글씨 */
+#status h2{
+  border: solid;
+  width: 300px;
+  padding: 10px 0;
+  font-weight: 900;
+}
+
+/* //타이틀에 색상 */
+.red {
+  color: #c92828;
+}
+.blue {
+  color: #223999;
+}
+
+/* //모기가 나오는 곳. 배경 이미지, flex로 정렬, margin으로 화면 가운데 정렬 */
+.grid {
+  background: url("마루바닥.webp");
+  background-size: contain;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 616px;
+  height: 616px;
+  margin: 10px auto;
+}
+
+/* //images 폴더에 있는 모기 아이콘을 가져와서 사각형크기에 맞게 cover 이용 */
+.mozzie{
+  background-image: url("chaeyoon.png");
+  background-size: cover;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+    /* Change the font-size of the button */
+    button {
+      font-size: 20px;
+    }
+  
+    /* Change the width and height of the .square class */
+  
+    /* Change the width of the #status id */
+    #status {
+      width: 90%;
+    }
+  
+    /* Change the width of the #status h2 */
+    #status h2 {
+      width: 90%;
+    }
+  
+    /* Change the width and height of the .grid class */
+    .grid {
+      width: 90%;
+      height: 90%;
+    }
+  }
